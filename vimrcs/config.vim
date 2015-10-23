@@ -24,6 +24,7 @@ set smarttab
 
 set autoindent
 set cindent
+colorscheme desert
 
 " Lightline
 set laststatus=2

@@ -35,6 +35,7 @@ Plug 'ap/vim-css-color'
 Plug 'majutsushi/tagbar'
 Plug 'svermeulen/vim-easyclip'
 Plug 'mhinz/vim-startify'
+Plug 'chilicuil/vim-sprunge'
 " Plug 'vim-scripts/vim-auto-save'
 
 " DB

@@ -1,5 +1,5 @@
 " Reload vim config
-noremap <leader>r :source ~/.vimrc<cr>
+noremap <leader>r :source ~/_vimrc<cr>
 
 " Remapping
 inoremap jj <esc> 
