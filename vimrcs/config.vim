@@ -35,6 +35,7 @@ scriptencoding utf-8
 nnoremap <leader><leader>p :set invpaste paste?<CR>
 set pastetoggle=<leader><leader>p 
 set showmode
+set clipboard=unnamed
 
 " CtrlSpace
 set nocompatible
