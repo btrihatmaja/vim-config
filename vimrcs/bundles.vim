@@ -142,3 +142,6 @@ let g:startify_custom_footer =
 
 " let g:startify_custom_header =
 "       \ map(split(system('tips | cowsay -f apt'), '\n'), '"   ". v:val') + ['']
+
+" Set bookmark startify
+let g:startify_bookmarks = [ {'v': '~/.vimrc'}, '~/data/Projects/rhsystem-docker' ]
