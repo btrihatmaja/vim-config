@@ -6,12 +6,14 @@ Plug 'bling/vim-airline'
 Plug 'morhetz/gruvbox'
 
 " Interface
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/unite.vim'
 Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'szw/vim-ctrlspace'
+Plug 'majutsushi/tagbar'
+Plug 'lilydjwg/colorizer'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -34,9 +36,9 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'ap/vim-css-color'
 Plug 'majutsushi/tagbar'
 Plug 'svermeulen/vim-easyclip'
-Plug 'tpope/vim-repeat'
 Plug 'mhinz/vim-startify'
-Plug 'chilicuil/vim-sprunge'
+Plug 'chrisbra/csv.vim'
+Plug 'scrooloose/syntastic'
 " Plug 'vim-scripts/vim-auto-save'
 
 " DB
@@ -49,25 +51,28 @@ Plug 'kien/ctrlp.vim'
 
 call plug#end()
 
-let g:lightline = {
-  \ 'colorscheme': 'default',
-  \ 'mode_map': { 'c': 'NORMAL' },
-  \ 'active': {
-  \ 'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
-  \ },
-  \ 'component_function': {
-  \   'modified': 'MyModified',
-  \   'readonly': 'MyReadonly',
-  \   'fugitive': 'MyFugitive',
-  \   'filename': 'MyFilename',
-  \   'fileformat': 'MyFileformat',
-  \   'filetype': 'MyFiletype',
-  \   'fileencoding': 'MyFileencoding',
-  \   'mode': 'MyMode',
-  \ },
-  \ 'separator': { 'left': '', 'right': '' },
-  \ 'subseparator': { 'left': '', 'right': '' }
-  \ }
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+"let g:lightline = {
+  "\ 'colorscheme': 'default',
+  "\ 'mode_map': { 'c': 'NORMAL' },
+  "\ 'active': {
+  "\ 'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+  "\ },
+  "\ 'component_function': {
+  "\   'modified': 'MyModified',
+  "\   'readonly': 'MyReadonly',
+  "\   'fugitive': 'MyFugitive',
+  "\   'filename': 'MyFilename',
+  "\   'fileformat': 'MyFileformat',
+  "\   'filetype': 'MyFiletype',
+  "\   'fileencoding': 'MyFileencoding',
+  "\   'mode': 'MyMode',
+  "\ },
+  "\ 'separator': { 'left': '', 'right': '' },
+  "\ 'subseparator': { 'left': '', 'right': '' }
+  "\ }
 
 function! MyModified()
   return &ft =~ 'help\|vimfiler\|gundo' ? '' : &modified ? '+' : &modifiable ? '' : '-'

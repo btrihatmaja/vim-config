@@ -3,7 +3,6 @@ augroup configgroup
   " Toggle number style
   autocmd InsertEnter * set number norelativenumber
   autocmd InsertLeave * set nonumber relativenumber
-  autocmd FileType c,xml,cpp setlocal foldmethod=syntax 
 
   " Auto save
  " autocmd InsertLeave * call AutoSave()

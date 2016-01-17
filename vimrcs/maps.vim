@@ -1,5 +1,5 @@
 " Reload vim config
-noremap <leader>r :source ~/_vimrc<cr>
+noremap <leader>r :source ~/.vimrc<cr>
 
 " Remapping
 inoremap jj <esc> 
@@ -19,3 +19,6 @@ nnoremap w. <c-w>>
 " Vim-fugitive
 nnoremap <leader><leader>gs :Gstatus
 nnoremap <leader><leader>gc :Gcommit
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
