@@ -8,6 +8,20 @@ set incsearch
 
 set relativenumber
 
+" JSX
+let g:jsx_ext_required = 0
+
+" Color column
+set colorcolumn=80
+
+" Indent line
+let g:indentLine_char = '┆'
+
+" Ctrlp
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 " Backspace and delete problem
 " http://vim.wikia.com/wiki/Backspace_and_delete_problems
 set backspace=2
@@ -18,8 +32,6 @@ set nowrap
 set textwidth=0
 set shiftwidth=2
 set tabstop=4
-set cursorline
-set softtabstop=4
 set expandtab
 set smarttab
 
@@ -27,6 +39,7 @@ set autoindent
 set cindent
 set t_Co=256
 
+set clipboard=unnamedplus
 
 " Airline
 set laststatus=2
@@ -71,3 +84,46 @@ set showmode
 " CtrlSpace
 set nocompatible
 set hidden
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩'
+
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
+
+" let g:ycm_server_python_interpreter = '/usr/bin/python'
+"
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#omni#functions = {}
+let g:deoplete#omni#functions.javascript = [
+  \ 'tern#Complete',
+  \ 'jspc#omni'
+\]
+set completeopt=longest,menuone,preview
+let g:deoplete#sources = {}
+let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
+let g:tern#command = ['tern']
+let g:tern#arguments = ['--persistent']
+autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:UltiSnipsExpandTrigger="<C-j>"
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" close the preview window when you're not using it
+let g:SuperTabClosePreviewOnPopupClose = 1
+" or just disable the preview entirely
+set completeopt-=preview

@@ -22,3 +22,6 @@ nnoremap <leader><leader>gc :Gcommit
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
+
+" Refresh screen
+nnoremap rr :redraw!<cr>

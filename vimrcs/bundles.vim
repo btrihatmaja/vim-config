@@ -2,11 +2,11 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 
 " Interface
-" Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/unite.vim'
 Plug 'scrooloose/syntastic'
@@ -14,6 +14,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'szw/vim-ctrlspace'
 Plug 'majutsushi/tagbar'
 Plug 'lilydjwg/colorizer'
+Plug 'Yggdroot/indentLine'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -21,32 +22,42 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'Lokaltog/vim-easymotion'
 
-" Rails
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-bundler'
 
 " Code
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'kchmck/vim-coffee-script'
-Plug 'Valloric/YouCompleteMe'
+Plug 'ervandew/supertab'
+" Plug 'Valloric/YouCompleteMe'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-haml'
 Plug 'vim-ruby/vim-ruby'
 Plug 'ap/vim-css-color'
-Plug 'majutsushi/tagbar'
 Plug 'svermeulen/vim-easyclip'
 Plug 'mhinz/vim-startify'
 Plug 'chrisbra/csv.vim'
 Plug 'scrooloose/syntastic'
-" Plug 'vim-scripts/vim-auto-save'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'ngmy/vim-rubocop'
+Plug 'mxw/vim-jsx'
+Plug 'gavocanov/vim-js-indent'
+Plug 'Raimondi/delimitMate'
+Plug 'ternjs/tern_for_vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+"vim-scripts/vim-auto-save'
 
-" DB
-Plug 'ivalkeen/vim-simpledb'
 
 " Search
 Plug 'kien/ctrlp.vim'
 
+" Tmux
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'christoomey/vim-tmux-navigator'
 
 
 call plug#end()

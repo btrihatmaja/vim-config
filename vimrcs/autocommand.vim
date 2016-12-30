@@ -14,7 +14,7 @@ augroup omnigroup
   autocmd FileType c,cpp setlocal omnifunc=ccomplete#Complete
   autocmd FileType css,less,stylus,sass setlocal omnifunc=csscomplete#CompleteCSS
   autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
-  autocmd FileType javascript setlocal omnifunc=jscomplete#CompleteJS
+  autocmd FileType javascript,jsx  setlocal omnifunc=jscomplete#CompleteJS
   autocmd FileType python set omnifunc=pythoncomplete#Complete
   autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
 augroup END
