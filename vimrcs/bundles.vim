@@ -32,7 +32,7 @@ Plug 'ervandew/supertab'
 "Plug 'justmao945/vim-clang'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'tweekmonster/deoplete-clang2'
+Plug 'zchee/deoplete-clang'
 " Plug 'tpope/vim-haml'
 " Plug 'vim-ruby/vim-ruby'
 " Plug 'ap/vim-css-color'
