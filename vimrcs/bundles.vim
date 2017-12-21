@@ -13,7 +13,7 @@ Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'szw/vim-ctrlspace'
 Plug 'majutsushi/tagbar'
-Plug 'lilydjwg/colorizer'
+" Plug 'lilydjwg/colorizer'
 Plug 'Yggdroot/indentLine'
 
 " Git
@@ -27,28 +27,30 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'kchmck/vim-coffee-script'
+" Plug 'kchmck/vim-coffee-script'
 Plug 'ervandew/supertab'
+"Plug 'justmao945/vim-clang'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'tpope/vim-haml'
-Plug 'vim-ruby/vim-ruby'
-Plug 'ap/vim-css-color'
+Plug 'tweekmonster/deoplete-clang2'
+" Plug 'tpope/vim-haml'
+" Plug 'vim-ruby/vim-ruby'
+" Plug 'ap/vim-css-color'
 Plug 'svermeulen/vim-easyclip'
 Plug 'mhinz/vim-startify'
-Plug 'chrisbra/csv.vim'
+" Plug 'chrisbra/csv.vim'
 Plug 'scrooloose/syntastic'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'ngmy/vim-rubocop'
-Plug 'mxw/vim-jsx'
-Plug 'gavocanov/vim-js-indent'
+" Plug 'ekalinin/Dockerfile.vim'
+" Plug 'ngmy/vim-rubocop'
+" Plug 'mxw/vim-jsx'
+" Plug 'gavocanov/vim-js-indent'
 Plug 'Raimondi/delimitMate'
-Plug 'ternjs/tern_for_vim'
+" Plug 'ternjs/tern_for_vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 "vim-scripts/vim-auto-save'
 
 

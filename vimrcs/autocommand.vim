@@ -18,3 +18,10 @@ augroup omnigroup
   autocmd FileType python set omnifunc=pythoncomplete#Complete
   autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
 augroup END
+
+" Format C/C++ file when saving
+function! Formatonsave()
+  let l:formatdiff = 1
+  pyf ~/clang-format.py
+endfunction
+autocmd BufWritePre *.h,*.cc,*.cpp,*.c call Formatonsave()
