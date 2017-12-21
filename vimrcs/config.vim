@@ -11,6 +11,9 @@ set relativenumber
 " JSX
 let g:jsx_ext_required = 0
 
+" Change comment color
+hi Comment ctermfg=LightBlue
+
 " Color column
 set colorcolumn=80
 
@@ -126,3 +129,5 @@ set completeopt-=preview
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:deoplete#sources#clang#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang.so'
 let g:deoplete#sources#clang#clang_header = '/usr/include/clang'
+
+
