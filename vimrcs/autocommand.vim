@@ -19,9 +19,7 @@ augroup omnigroup
   autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
 augroup END
 
-" Format C/C++ file when saving
-function! Formatonsave()
-  let l:formatdiff = 1
-  pyf ~/clang-format.py
-endfunction
-autocmd BufWritePre *.h,*.cc,*.cpp,*.c call Formatonsave()
+
+autocmd Filetype ipynb nmap <silent><Leader>b :VimpyterInsertPythonBlock<CR>
+autocmd Filetype ipynb nmap <silent><Leader>j :VimpyterStartJupyter<CR>
+autocmd Filetype ipynb nmap <silent><Leader>n :VimpyterStartNteract<CR>

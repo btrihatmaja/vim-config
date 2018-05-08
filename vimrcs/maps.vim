@@ -25,3 +25,7 @@ nmap <F8> :TagbarToggle<CR>
 
 " Refresh screen
 nnoremap rr :redraw!<cr>
+
+
+map <C-K> :pyf ~/clang-format.py<cr>
+imap <C-K> <c-o>:pyf ~/clang-format.py<cr>

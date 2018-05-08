@@ -94,7 +94,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
-let g:syntastic_error_symbol = '❌'
+let g:syntastic_error_symbol = '💩'
 let g:syntastic_style_error_symbol = '⁉️'
 let g:syntastic_warning_symbol = '⚠️'
 let g:syntastic_style_warning_symbol = '💩'
@@ -127,7 +127,26 @@ let g:SuperTabClosePreviewOnPopupClose = 1
 set completeopt-=preview
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-let g:deoplete#sources#clang#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang.so'
-let g:deoplete#sources#clang#clang_header = '/usr/include/clang'
+let g:deoplete#sources#clang#libclang_path = '/usr/lib64/libclang.so'
+let g:deoplete#sources#clang#clang_header = '/usr/lib64/clang'
+let g:deoplete#sources#go#gocode_binary = '/home/prdx/go/bin/gocode'
 
+let g:tex_conceal = ""
 
+hi Search cterm=NONE ctermfg=black ctermbg=white
+let g:ackprg = 'ag --vimgrep'
+
+set termguicolors     " enable true colors support
+let ayucolor="dark" " for mirage version of theme
+colorscheme ayu
+
+let g:tagbar_type_go = {
+    \ 'ctagstype': 'go',
+    \ 'kinds' : [
+        \'p:package',
+        \'f:function',
+        \'v:variables',
+        \'t:type',
+        \'c:const'
+    \]
+    \}

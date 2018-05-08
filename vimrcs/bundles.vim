@@ -15,7 +15,7 @@ Plug 'szw/vim-ctrlspace'
 Plug 'majutsushi/tagbar'
 " Plug 'lilydjwg/colorizer'
 Plug 'Yggdroot/indentLine'
-
+Plug 'ayu-theme/ayu-vim' 
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -46,16 +46,22 @@ Plug 'scrooloose/syntastic'
 " Plug 'gavocanov/vim-js-indent'
 Plug 'Raimondi/delimitMate'
 " Plug 'ternjs/tern_for_vim'
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'vyzyv/vimpyter'
+Plug 'zchee/deoplete-jedi'
 " Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
 " Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 " Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
-"vim-scripts/vim-auto-save'
+"" A Vim Plugin for Lively Previewing LaTeX PDF Output
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'zchee/deoplete-go', { 'do': 'make' }
+" vim-scripts/vim-auto-save'
 
 
 " Search
 Plug 'kien/ctrlp.vim'
+Plug 'mileszs/ack.vim'
 
 " Tmux
 Plug 'tmux-plugins/vim-tmux-focus-events'
