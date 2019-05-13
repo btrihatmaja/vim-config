@@ -24,18 +24,19 @@ Plug 'Lokaltog/vim-easymotion'
 
 
 " Code
+Plug 'nvie/vim-flake8'
+Plug 'tmhedberg/SimpylFold'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'tpope/vim-repeat'
 " Plug 'kchmck/vim-coffee-script'
 Plug 'ervandew/supertab'
 "Plug 'justmao945/vim-clang'
 " Plug 'Valloric/YouCompleteMe'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-clang'
 " Plug 'tpope/vim-haml'
 " Plug 'vim-ruby/vim-ruby'
-" Plug 'ap/vim-css-color'
+Plug 'ap/vim-css-color'
 Plug 'svermeulen/vim-easyclip'
 Plug 'mhinz/vim-startify'
 " Plug 'chrisbra/csv.vim'
@@ -48,7 +49,7 @@ Plug 'Raimondi/delimitMate'
 " Plug 'ternjs/tern_for_vim'
 "Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'vyzyv/vimpyter'
+Plug 'szymonmaszke/vimpyter'
 Plug 'zchee/deoplete-jedi'
 " Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
 " Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
@@ -66,6 +67,8 @@ Plug 'mileszs/ack.vim'
 " Tmux
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'christoomey/vim-tmux-navigator'
+
+
 
 
 call plug#end()

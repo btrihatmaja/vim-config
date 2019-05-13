@@ -137,7 +137,7 @@ hi Search cterm=NONE ctermfg=black ctermbg=white
 let g:ackprg = 'ag --vimgrep'
 
 set termguicolors     " enable true colors support
-let ayucolor="dark" " for mirage version of theme
+let ayucolor="mirage" " for mirage version of theme
 colorscheme ayu
 
 let g:tagbar_type_go = {
@@ -150,3 +150,6 @@ let g:tagbar_type_go = {
         \'c:const'
     \]
     \}
+
+let python_highlight_all=1
+syntax on
